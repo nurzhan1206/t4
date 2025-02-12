@@ -4,7 +4,8 @@ import kz.aitu.oop.restservice.Assignment2.RentalService;
 import kz.aitu.oop.restservice.Assignment2.Vehicle;
 import kz.aitu.oop.restservice.Assignment2.Customer;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController

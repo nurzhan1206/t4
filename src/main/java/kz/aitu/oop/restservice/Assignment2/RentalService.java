@@ -1,10 +1,12 @@
 package kz.aitu.oop.restservice.Assignment2;
 
+import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
+@Service  // ✅ Добавь эту аннотацию
 public class RentalService {
     private final List<Vehicle> vehicles = new ArrayList<>();
     private final List<Customer> customers = new ArrayList<>();
@@ -76,8 +78,9 @@ public class RentalService {
                 .filter(v -> v.getBrand().equalsIgnoreCase(brand))
                 .forEach(System.out::println);
     }
+
     public List<Vehicle> getAvailableVehicles() {
         return vehicles.stream().filter(Vehicle::isAvailable).toList();
     }
-
 }
+
