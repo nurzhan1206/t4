@@ -8,7 +8,6 @@ public class dbConnect {
     private static final String USER = "postgres";
     private static final String PASSWORD = "q1p0w2o9@";
 
-
     public void getConnectionToDB() throws Exception {
         // Class.forName("org.postgresql.Driver"); // Driver name
         Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
