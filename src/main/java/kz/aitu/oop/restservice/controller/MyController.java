@@ -1,6 +1,5 @@
 package kz.aitu.oop.restservice.controller;
 
-import kz.aitu.oop.restservice.Assignment2.RentalService;
 import kz.aitu.oop.restservice.Assignment2.Vehicle;
 import kz.aitu.oop.restservice.Assignment2.Customer;
 import org.springframework.web.bind.annotation.*;
@@ -42,4 +41,3 @@ public class MyController {
         return rentalService.getAvailableVehicles();
     }
 }
-

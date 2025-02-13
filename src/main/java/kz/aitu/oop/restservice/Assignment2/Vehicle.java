@@ -5,4 +5,3 @@ public class Vehicle extends AbstractVehicle1 {
         super(id, brand, model);
     }
 }
-

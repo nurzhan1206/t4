@@ -1,4 +1,4 @@
-package kz.aitu.oop.restservice.DBconnect;
+package kz.aitu.oop.restservice.dbConnect;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,15 +13,15 @@ public class dbConnect {
         Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
         System.out.println("Connection Established successfully");
 
-        String query = "SELECT * FROM assik.assik"; // query to be run
+        String query = "SELECT * FROM public.nurzhan"; // query to be run
         Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(query); // Execute query
+        ResultSet rs = st.executeQuery(query);
         rs.next();
 
         String name = rs.getString("name"); // Retrieve name from db
-        System.out.println(name); // Print result on console
+        System.out.println(name);
 
-        st.close(); // close statement
-        con.close(); // close connection
+        st.close();
+        con.close();
         System.out.println("Connection Closed....");}
 }

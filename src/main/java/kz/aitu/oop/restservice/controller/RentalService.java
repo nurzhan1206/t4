@@ -1,12 +1,14 @@
-package kz.aitu.oop.restservice.Assignment2;
+package kz.aitu.oop.restservice.controller;
 
+import kz.aitu.oop.restservice.Assignment2.Customer;
+import kz.aitu.oop.restservice.Assignment2.Vehicle;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-@Service  // ✅ Добавь эту аннотацию
+@Service
 public class RentalService {
     private final List<Vehicle> vehicles = new ArrayList<>();
     private final List<Customer> customers = new ArrayList<>();
@@ -83,4 +85,3 @@ public class RentalService {
         return vehicles.stream().filter(Vehicle::isAvailable).toList();
     }
 }
-

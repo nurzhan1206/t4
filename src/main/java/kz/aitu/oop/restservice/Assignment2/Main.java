@@ -1,5 +1,7 @@
 package kz.aitu.oop.restservice.Assignment2;
 
+import kz.aitu.oop.restservice.controller.RentalService;
+
 public class Main {
     public static void main(String[] args) {
         RentalService rentalService = new RentalService();
@@ -27,6 +29,5 @@ public class Main {
         rentalService.filterVehiclesByBrand("Toyota");
     }
 }
-
 
 

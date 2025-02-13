@@ -46,4 +46,3 @@ public class Customer {
         return Objects.hash(id);
     }
 }
-
